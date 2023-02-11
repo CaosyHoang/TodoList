@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Learn</title>
+</head>
+<body>
+    <button class="btn-small" id="close">Thoát</button>
+    <h1>Học</h1>
+    <div id="question-board">
+        <label>Định nghĩa</label>
+        <div name="quest">.....</div>
+        <label>Đáp án của bạn</label>
+        <input name="answer" type="text" placeholder="Nhập tiếng anh">
+        <div class="notification">
+            <label>Đáp án đúng</label>
+            <div class="notification-sub">
+                <div name="right-answer"></div>
+                <button name="next-to" class="btn-big">Tiếp tục</button>
+            </div>
+        </div>
+        <div class="options">
+            <button class="btn-big">Bạn không biết à?</button>
+            <button class="btn-big">Đáp án</button>
+        </div>
+    </div>
+    <script src="./learn.js"></script>
+</body>
+</html>

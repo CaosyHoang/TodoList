@@ -1,0 +1,163 @@
+html{
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #fff;
+}
+body{
+    background-color: #0a092d;
+    margin: 0;
+    padding: 15px;
+}
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+h1{
+    color: #f08700;
+    margin-top: -10px; 
+}
+/* CREATE */
+.block{
+    width: max-content;
+    text-align: center;
+}
+.block button{
+    margin: 20px 0;
+}
+/* EDITTING */
+li{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    background-color: #2e3856;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+li > span{
+    width: 42.5%;
+    min-height: 30px;
+    line-height: 30px;
+    margin: 0 10px 16px;
+}
+li > span:not(.word-setup){
+    position: relative;
+    outline: none;
+    border-bottom: 2px solid #fff;
+}
+li span[name=terms]::before{
+    content: "Thuật ngữ";
+    position: absolute;
+    bottom: -30px;
+    font-size: 18px;
+}
+.after{
+    --size: 22px;
+    text-align: center;
+    line-height: var(--size);
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+    background-color: #ffcd1f;
+    font-size: 16px;
+    color: #000;
+}
+li span[name=define]::before{
+    content: "Ý nghĩa";
+    position: absolute;
+    bottom: -30px;
+    font-size: 18px;
+}
+.word-setup{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.word-setup button{
+    padding: 5px 30px;
+}
+.btn-small{
+    border: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 2px;
+    padding: 5px 15px;
+    margin: 0 5px;
+}
+.btn-small:hover{
+    cursor: pointer;
+    background-color: rgb(222, 221, 221);
+}
+.btn-big{
+    background-color: #4255ff;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.btn-big:hover{
+    background-color: #423ed8;
+    cursor: pointer;
+}
+/* LEARN */
+#close{
+    float: right;
+    margin: 0;
+}
+#question-board{
+    background-color: #2e3856;
+    padding: 30px 50px;
+    margin: 0 15vw;
+    border-radius: 5px;
+}
+label{
+    color: #5b6f90;
+    font-size: 18px;
+    display: block;
+    margin: 20px 0;
+}
+input{
+    width: 100%;
+    background-color: #0A092C;
+    height: 46px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 22px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.options{
+    margin-top: 10px;
+    text-align: right;
+}
+.notification{
+    display: none;
+}
+.notification-sub{
+    text-align: right;
+}
+.notification-sub div{
+    width: 100%;
+    background-color: #19804f;
+    height: 46px;
+    line-height: 46px;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.options button, .notification-sub button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
