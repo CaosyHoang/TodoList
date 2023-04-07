@@ -1,0 +1,84 @@
+*{
+    font-family: 'Shantell Sans', cursive;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.5rem;
+    color: #333;
+}
+body{
+    background-color: #343541;
+    margin: 0;
+}
+#form{
+    background-image: url("./Image/background.jpg");
+    margin: 100px auto 0;
+    max-width: 500px;
+    height: 550px;
+    border: 20px solid #fff;
+    border-radius: 5px;
+}
+.header{
+    text-align: center;
+    margin: 40px 0 60px;
+    font-size: 5rem;
+}
+.user{
+    display: flex;
+    flex-direction: row; 
+}
+.decription{
+    text-align: center;
+    font-size: 2rem;
+}
+.input{
+    padding: 10px;
+    max-width: 70%;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid #ce5e71;
+    border-radius: 5px;
+}
+.push{
+    flex: 1;
+    margin: 0 5px;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: bold;
+}
+.push:hover{
+    background-color: #f5f1f1;
+}
+.push:active{
+    background-color: #e3dede;
+}
+.list{
+    height: 325px;
+    padding: 20px 20px 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+.list::-webkit-scrollbar{
+    display: none;
+}
+.list > li{
+    display: flex;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: 2px dashed #ccc;
+    transition: background-color .5s linear;
+}
+.list > li.active{
+    background-color: #e6e1e1;
+}
+.list > li > p{
+    flex: 1;
+    padding: 10px;
+    margin: 0 30px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
